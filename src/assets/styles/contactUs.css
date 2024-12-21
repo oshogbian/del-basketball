@@ -1,0 +1,147 @@
+.contact-container {
+   min-height: 100vh;
+   background-color: #ffffff;
+ }
+ 
+ .contact-hero {
+   background: linear-gradient(150deg, #8B0000 0%, #006400 100%);
+   color: white;
+   padding: 4rem 2rem;
+   text-align: center;
+ }
+ 
+ .contact-hero h1 {
+   font-size: 3.5rem;
+   margin-bottom: 1rem;
+   font-weight: 700;
+   color: #ffffff;
+ }
+ 
+ .contact-hero p {
+   font-size: 1.25rem;
+   max-width: 800px;
+   margin: 0 auto;
+   color: #ffffff;
+ }
+ 
+ .contact-content {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 4rem 1.5rem;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 4rem;
+ }
+ 
+ .contact-info {
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+ }
+ 
+ .info-section {
+   background: white;
+   border-radius: 12px;
+   padding: 2rem;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s ease;
+ }
+ 
+ .info-section:hover {
+   transform: translateY(-4px);
+ }
+ 
+ .info-section h2 {
+   color: #8B0000;
+   font-size: 1.75rem;
+   margin-bottom: 1.5rem;
+   font-weight: 600;
+ }
+ 
+ .contact-item {
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   margin-bottom: 1.25rem;
+   color: #4a5568;
+ }
+ 
+ .contact-item .icon {
+   color: #8B0000;
+   flex-shrink: 0;
+ }
+ 
+ .contact-item a {
+   color: #4a5568;
+   text-decoration: none;
+   transition: color 0.3s ease;
+ }
+ 
+ .contact-item a:hover {
+   color: #8B0000;
+ }
+ 
+ .social-links {
+   display: flex;
+   gap: 1.5rem;
+   margin-top: 1rem;
+ }
+ 
+ .social-button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 48px;
+   height: 48px;
+   border-radius: 50%;
+   background: #f7fafc;
+   transition: all 0.3s ease;
+ }
+ 
+ .social-button:hover {
+   background: #8B0000;
+ }
+ 
+ .social-button:hover .icon {
+   color: white;
+ }
+ 
+ .business-hours {
+   display: grid;
+   gap: 0.75rem;
+ }
+ 
+ .hours-row {
+   display: flex;
+   justify-content: space-between;
+   padding: 0.5rem 0;
+   border-bottom: 1px solid #e2e8f0;
+ }
+ 
+ .hours-row:last-child {
+   border-bottom: none;
+ }
+ 
+ .map-container {
+   border-radius: 12px;
+   overflow: hidden;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   height: 100%;
+   min-height: 400px;
+   background: #f7fafc;
+ }
+ 
+ @media (max-width: 768px) {
+   .contact-hero h1 {
+     font-size: 2.5rem;
+   }
+   
+   .contact-content {
+     grid-template-columns: 1fr;
+     gap: 2rem;
+   }
+   
+   .map-container {
+     min-height: 300px;
+   }
+ }

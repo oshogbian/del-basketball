@@ -1,0 +1,77 @@
+/* Root variables for consistent color theme */
+:root {
+   --del-red: #8B0000;
+   --del-green: #006400;
+   --del-black: #000000;
+   --del-white: #ffffff;
+   --gradient-primary: linear-gradient(
+     120deg,
+     var(--del-black) 0%,
+     var(--del-red) 25%,
+     var(--del-green) 75%,
+     var(--del-black) 100%
+   );
+ }
+ 
+ .footer {
+   background: var(--gradient-primary);
+   color: var(--del-white);
+   width: 100%;
+   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+ }
+ 
+ .footer-bottom {
+   padding: 1.5rem 0;
+   border-top: 1px solid rgba(255, 255, 255, 0.1);
+ }
+ 
+ .footer-bottom-content {
+   max-width: 1400px;
+   margin: 0 auto;
+   padding: 0 2rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 1rem;
+   text-align: center;
+ }
+ .footer-bottom-content p {
+   max-width: 1400px;
+   margin: 0 auto;
+   padding: 0 2rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 1rem;
+   text-align: center;
+   color:#ffffff;
+ }
+ 
+ .footer-links {
+   display: flex;
+   gap: 1rem;
+   align-items: center;
+ }
+ 
+ .footer-links a {
+   color: rgba(255, 255, 255, 0.8);
+   text-decoration: none;
+   transition: color 0.3s ease;
+ }
+ 
+ .footer-links a:hover {
+   color: var(--del-white);
+ }
+ 
+ .separator {
+   color: rgba(255, 255, 255, 0.4);
+ }
+ 
+ /* Responsive Design */
+ @media (min-width: 768px) {
+   .footer-bottom-content {
+     flex-direction: row;
+     justify-content: space-between;
+     text-align: left;
+   }
+ }
